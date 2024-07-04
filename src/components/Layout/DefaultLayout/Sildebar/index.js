@@ -5,6 +5,7 @@ function Silebar() {
   return (
     <aside className={cx('wrapper')}>
       <h2>Sildebar</h2>
+      <h2>Sildebar2</h2>
     </aside>
   );
 }
