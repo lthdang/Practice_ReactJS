@@ -1,5 +1,4 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --white: #fff;
@@ -22,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ProxlimaNova', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
@@ -38,6 +37,31 @@ input,
 a[href] {
   color: var(--text-color);
   text-decoration: none;
+}
+
+// Font emnbeded
+@font-face {
+  font-family: ProxlimaNova;
+  src: url('/assets/font/Proxima-Nova-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ProxlimaNova;
+  src: url('/assets/font/ProximaNova-Semibold.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: ProxlimaNova;
+  src: url('/assets/font/Proxima-Nova-Bold.woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url('/assets/font/Proxima-Nova-Bold.woff');
+  font-weight: 400;
 }
 
 // Custom tippy tooltip
