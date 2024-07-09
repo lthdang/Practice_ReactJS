@@ -14,12 +14,15 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { Link } from 'react-router-dom';
+
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 import 'tippy.js/dist/tippy.css';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
+import routersConfig from '~/config/routes';
 
 const cx = classNames.bind(styles);
 
@@ -96,7 +99,9 @@ function Header() {
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
         <div className={cx('logo')}>
-          <img src={images.logo} alt="Tiktok" />
+          <Link to={routersConfig.home} className={cx('logo-link')}>
+            <img src={images.logo} alt="Tiktok" />
+          </Link>
         </div>
 
         {/* Search */}
